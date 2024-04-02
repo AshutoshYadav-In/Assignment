@@ -1,0 +1,87 @@
+.Team{
+    display: none;
+    background-color: var(--main);
+    color: var(--sec);
+    width: 20vw;
+    border: 1px solid var(--border);
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+}
+.TT{
+    display: flex;
+}
+.Team> :nth-child(1){
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.Team> :nth-child(1)>:nth-child(2){
+    font-size: 1.2rem;
+}
+.Team> :nth-child(1)>:nth-child(2):hover{
+    transition: 0.2s;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.Team> :nth-child(2){
+padding: 0.2rem 0.6rem;
+}
+.Team> :nth-child(3){
+    padding: 0.2rem 0.6rem;
+    border: none;
+    color: var(--sec);
+    background-color: var(--blue);
+    transition: 0.2s;
+}
+.Team> :nth-child(3):hover{
+    background-color: var(--hoverblue);
+    cursor: pointer;
+}
+@media (max-width : 1500px) and (min-width : 992px){
+    .Team{
+        width: 35vw
+    }
+    .Team p{
+        font-size: 0.9rem;
+    }
+    .Team input{
+        font-size: 0.8rem;
+    }
+    .Team button{
+        font-size: 0.75rem;
+    }
+  }
+  @media (max-width : 992px) and (min-width : 520px){
+    .Team{
+        width: 65vw
+    }
+    .Team p{
+        font-size: 0.85rem;
+    }
+    .Team input{
+        font-size: 0.75rem;
+    }
+    .Team button{
+        font-size: 0.7rem;
+    }
+  }
+  @media (max-width : 520px) and (min-width : 310px){
+    .Team{
+        width: 90vw
+    }
+    .Team p{
+        font-size: 0.8rem;
+    }
+    .Team input{
+        font-size: 0.75rem;
+    }
+    .Team button{
+        font-size: 0.7rem;
+    }
+  }

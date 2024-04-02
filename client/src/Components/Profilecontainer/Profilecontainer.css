@@ -1,0 +1,34 @@
+.PC{
+    margin-top: 1rem;
+    max-height: 75vh;
+    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+justify-content: center;
+}
+.PC::-webkit-scrollbar {
+    display: none;
+}
+/* media queries */
+@media (max-width : 1500px) and (min-width : 992px){
+    .PC{
+        grid-template-columns: 32% 32% 32%;
+
+    }
+    
+}  
+@media (max-width : 992px) and (min-width : 520px){
+    .PC{
+        grid-template-columns: 49% 49% ;
+gap: 0.5rem;
+    }
+    
+}  
+@media (max-width : 520px) and (min-width : 310px){
+    .PC{
+        grid-template-columns: 48% 48% ;
+gap: 0.5rem;
+    }
+    
+}  

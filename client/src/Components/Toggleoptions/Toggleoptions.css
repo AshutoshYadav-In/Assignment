@@ -1,0 +1,26 @@
+.TO{
+    display: flex;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+.TO button{
+    padding: 0.2rem 0.6rem;
+    border: none;
+    color: var(--sec);
+    border: 1px solid var(--border);
+    background-color: var(--main);
+    transition: 0.2s;
+}
+.TO button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+@media (max-width : 1500px) and (min-width : 992px){
+
+
+}  
+@media (max-width :520px) and (min-width : 310px){
+    .TO button{
+        font-size: 0.75rem;
+    }
+}

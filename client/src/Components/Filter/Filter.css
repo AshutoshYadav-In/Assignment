@@ -1,0 +1,92 @@
+.Filter{
+    background-color: var(--main);
+    color: var(--sec);
+    width: 30vw;
+    display: none;
+    gap: 1rem;
+    flex-direction: column;
+    padding: 1rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    border: 1px solid var(--border);
+}
+.FT{
+    display: flex;
+}
+.Filter> select{
+padding: 0.1rem 0.2rem;
+}
+.Filter> select option{
+    cursor: pointer;
+}
+
+.Filter .FC {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Filter .FC> :nth-child(2){
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 1.1rem;
+}
+.Filter .FC> :nth-child(2):hover{
+    opacity: 0.8;
+}
+.Filter button{
+    padding: 0.2rem 0.6rem;
+    border: none;
+    color: var(--sec);
+    background-color: var(--blue);
+    transition: 0.2s;
+}
+.Filter button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.NDA{
+    background-color: var(--main);
+    color:var(--sec)
+}
+@media (max-width : 1500px) and (min-width : 992px){
+    .Filter{
+        width: 45vw;
+    }
+    .Filter p {
+        font-size: 0.9rem;
+    }
+    .Filter select {
+        font-size: 0.85rem;
+    }
+  }
+  @media (max-width : 992px) and (min-width : 520px){
+    .Filter{
+        width: 65vw;
+    }
+    .Filter p {
+        font-size: 0.85rem;
+    }
+    .Filter select {
+        font-size: 0.8rem;
+    }
+    .Filter button {
+        font-size: 0.75rem;
+    }
+  }
+  @media (max-width : 520px) and (min-width : 310px){
+    .Filter{
+        width: 90vw;
+    }
+    .Filter p {
+        font-size: 0.8rem;
+    }
+    .Filter select {
+        font-size: 0.75rem;
+    }
+    .Filter button {
+        font-size: 0.7rem;
+    }
+  }

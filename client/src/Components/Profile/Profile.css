@@ -1,0 +1,68 @@
+.Profile{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: space-between;
+    border: 1px solid var(--border);
+    padding: 1rem 1.5rem;
+    background-color: var(--main);
+    color: var(--sec);
+}
+.Profile p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.PN{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.PN> :nth-child(1){
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    background-color: var(--sec);
+}
+.Profile> :nth-child(6){
+padding: 0.2rem 0.6rem;
+border: none;
+color: var(--sec);
+background-color: var(--blue);
+transition: 0.2s;
+}
+.Profile> :nth-child(6):hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+@media (max-width : 1500px) and (min-width : 992px){
+.Profile  p{
+    font-size: 0.95rem;
+}
+}  
+@media (max-width : 992px) and (min-width : 520px){
+    .Profile{
+        padding: 1rem 1rem
+    }
+    .Profile  p{
+        font-size: 0.9rem;
+    }
+    .Profile  button{
+        font-size: 0.75rem;
+    }
+    }  
+
+    @media (max-width :520px) and (min-width : 310px){
+        .Profile{
+            padding: 1rem 0.5rem
+        }
+        .Profile  p{
+            font-size: 0.8rem;
+        }
+        .Profile  button{
+            font-size: 0.7rem;
+        }
+        }  

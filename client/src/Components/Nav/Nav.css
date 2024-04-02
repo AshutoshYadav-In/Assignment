@@ -1,0 +1,74 @@
+.Nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--main);
+    color: var(--sec);
+    padding: 1rem 0rem;
+    gap: 0.5rem;
+    border-bottom: 1px solid var(--border);
+}
+.Nav > :nth-child(1){
+    font-size: 1.5rem;
+}
+.NIC{
+    display: flex;
+    gap: 1rem;
+    background-color: var(--sec);
+    align-items: center;
+}
+.NIC> :nth-child(1){
+    background-color: var(--sec);
+    border: none;
+    padding: 0.3rem 0.5rem;
+}
+.NIC> :nth-child(2){
+    font-size: 1rem;
+    padding: 0.5rem;
+    border: none;
+ color: var(--main);
+ cursor: pointer;
+}
+/* //media queries// */
+
+@media (max-width : 1500px) and (min-width : 992px){
+    .Nav > :nth-child(1){
+        font-size: 1.4rem;
+    }
+    .NIC> :nth-child(2){
+        font-size: 1rem;
+        padding: 0.4rem;
+    }
+}
+@media (max-width : 992px) and (min-width : 520px){
+    .Nav > :nth-child(1){
+        font-size: 1.3rem;
+    }
+    .NIC> :nth-child(2){
+        font-size: 0.85rem;
+        padding: 0.35rem;
+    }
+    .NIC> :nth-child(1){
+        font-size: 0.7rem;
+        padding: 0.25rem 0.5rem;
+    }
+  }
+  @media (max-width : 520px) and (min-width : 310px){
+    .Nav > :nth-child(1){
+        font-size: 1.1rem;
+        display: none;
+    }
+    .NIC> :nth-child(2){
+        font-size: 0.8rem;
+        padding: 0.25rem;
+    }
+    .NIC> :nth-child(1){
+        font-size: 0.65rem;
+        padding: 0.25rem 0.5rem;
+    }
+    .NIC{
+        width: min-content;
+        width: 100%;
+        justify-content: space-between;
+    }
+  }

@@ -1,0 +1,3 @@
+Created by : ashutosh yadav
+.............................
+to start the project: clone the repository => open terminal => cd client=> npm i => npm start => open new terminal => cd server => npm i=> npm start
